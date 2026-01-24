@@ -8,13 +8,11 @@ n.append(3)
 print()
 print(f"Дан список {n} с размером {len(n)}. Элементы упорядочены по возр. кроме последнего")
 
-
 def bubble(l):
     for i in range(len(l)):
         for j in range(len(l) - i - 1):
             if l[j] > l[j + 1]:
                 l[j], l[j + 1] = l[j + 1], l[j]
     return l
-
 
 print('Результат после упорядочивания:', bubble(n))
